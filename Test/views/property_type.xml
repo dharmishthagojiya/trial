@@ -157,6 +157,11 @@
               action = "property_tag_action"
               parent = "settings_root"
               sequence = "30"/>
+   <menuitem id = "menu_create_offer"
+              name = "Create Offer"
+              parent = "settings_root"
+              action = "action_create_offer"
+              sequence = "40"/>
 
  
               

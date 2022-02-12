@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<odoo>
+    <record model="ir.ui.view" id="view_create_offer_form">
+        <field name="name">create.offer.wizard.form</field>
+        <field name="model">create.offer.wizard</field>
+        <field name="arch" type="xml">
+            <form string="create offer">
+
+                <group class="oe_title">
+                    <field name="name" />
+                    <field name="property_type_id"/>
+                </group>
+
+                <footer>
+                    <button name = "action_create_offer" type="object" string="create" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_create_offer">
+        <field name="name">Create Offer</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">create.offer.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_create_offer_form"/>
+        <field name="target">new</field>
+    </record>
+
+</odoo>
