@@ -1,0 +1,28 @@
+<odoo>
+    <record model="ir.ui.view" id="view_parent_form">
+        <field name="name">parent.model.form</field>
+        <field name="model">parent.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="parent_field_1"/>
+                        <field name="parent_field_2"/>
+                    </group>
+                    <notebook>
+                        <page string="Child Data">
+                            <!-- you can display child data like code below -->
+                            <field name="child_field_ids">
+                                <tree>
+                                    <field name="child_field_1"/>
+                                    <field name="child_field_2"/>
+                                    <field name="child_field_3"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
