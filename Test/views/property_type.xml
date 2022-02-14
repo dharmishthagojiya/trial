@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    
+
      <record id="property_offer_tree" model="ir.ui.view">
         <field name="name">property.offer.tree</field>
         <field name="model">estate.property.offer</field>
@@ -22,7 +22,7 @@
         <field name="model">estate.property.offer</field>
         <field name="arch" type="xml">
             <form string="Test">
-                 
+
                 <sheet>
                     <group>
                         <field name="price"/>
@@ -69,7 +69,7 @@
         <field name="arch" type="xml">
             <tree default_order="name">
                 <field name="name"/>
-               
+
                 <field name="sequence" widget="handle"/>
             </tree>
         </field>
@@ -82,11 +82,6 @@
             <form string="Test">
 
                 <sheet>
-                    <div class="oe_button_box" name="button_box">
-                        <button name="%(property_offer_action)d" type="action" class="oe_stat_button" icon='fa-money'>
-                            <field name="offer_count" string="Offer" widget="statinfo"/>
-                            </button>
-                    </div>
 
                     <h1><b><field name="name" placeholder="Category"/></b></h1>
                     <hr size="10000px" noshade="1"/>
@@ -157,12 +152,13 @@
               action = "property_tag_action"
               parent = "settings_root"
               sequence = "30"/>
-   <menuitem id = "menu_create_offer"
+   <!--<menuitem id = "menu_create_offer"
               name = "Create Offer"
               parent = "settings_root"
               action = "action_create_offer"
-              sequence = "40"/>
+              sequence = "40"/>-->
 
- 
-              
+
+
 </odoo>
+

@@ -12,6 +12,8 @@
                 </page>
             </xpath>
         </field>
-    </record>
+
+   </record>
 
 </odoo>
+

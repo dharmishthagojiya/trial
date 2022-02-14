@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_report_test_model" model="ir.actions.report">
+            <field name="name">Property Offers</field>
+            <field name="model">test.model</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">Test.report_property</field>
+            <field name="report_file">Test.report_property</field>
+            <field name="print_report_name">'Property Offers'</field>
+            <field name="binding_model_id" ref="model_test_model"/>
+        </record>
+    </data>
+
+
+</odoo>
+

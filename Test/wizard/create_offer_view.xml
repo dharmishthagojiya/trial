@@ -26,5 +26,3 @@
         <field name="view_id" ref="view_create_offer_form"/>
         <field name="target">new</field>
     </record>
-
-</odoo>
